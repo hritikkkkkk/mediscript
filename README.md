@@ -184,18 +184,3 @@ Always seek advice from qualified medical practitioners regarding any medical co
 
 ---
 
-## 👨‍💻 Author
-
-**Hritik Singh**
-
-AI & Machine Learning Enthusiast
-
-LinkedIn: https://linkedin.com/in/debugwithhritiksingh
-
-GitHub: https://github.com/yourusername
-
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
