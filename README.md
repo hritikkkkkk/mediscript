@@ -182,5 +182,17 @@ MediScript AI is intended for educational and informational purposes only. It do
 
 Always seek advice from qualified medical practitioners regarding any medical condition.
 
+## 👨‍💻 Author
+
+**Hritik Singh**
+
+AI & Machine Learning Enthusiast
+
+LinkedIn: https://linkedin.com/in/debugwithhritiksingh
+
+GitHub: https://github.com/yourusername
+
+---
+
 ---
 
