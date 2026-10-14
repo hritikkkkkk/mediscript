@@ -63,3 +63,13 @@ cloud.firestore {
       allow read: if isOwnerDoc(resource.data.doctor_id) || (isPatient() && resource.data.patient_id == request.auth.token.patientId);
       allow write: if isOwnerDoc(resource == null ? request.resource.data.doctor_id : resource.data.doctor_id);
     }
+
+
+      tch /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() { return request.auth != null; }
+    function isDoctor() { return isSignedIn() && request.auth.token.role == 'doctor'; }
+    function isPatient() { return isSignedIn() && request.auth.token.role == 'patient'; }
+    function isOwnerDo
