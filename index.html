@@ -73,3 +73,5 @@ cloud.firestore {
     function isDoctor() { return isSignedIn() && request.auth.token.role == 'doctor'; }
     function isPatient() { return isSignedIn() && request.auth.token.role == 'patient'; }
     function isOwnerDo
+resource.data.patient_id == request.auth.token.patientId);
+      allow write: if isOwnerDoc(resource == null ? request.resource.data.doctor_id : resource.data.
