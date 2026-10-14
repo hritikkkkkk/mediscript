@@ -51,3 +51,7 @@ service cloud.firestore {
       allow write: if false; // System only
     }
 
+    match /reminders/{reminderId} {
+      allow read: if isOwnerDoc(resource.data.doctor_id) || (isPatient() && resource.data.patient_id == request.auth.token.patientId);
+      allow write: if isOwnerDoc(resource == null ? request.resource.data.doctor_id : resource.data.doctor_id);
+    }
