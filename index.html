@@ -45,3 +45,9 @@ service cloud.firestore {
       allow write: if isDoctor();
     }
 
+
+    match /medicines/{medicineId} {
+      allow read: if isSignedIn();
+      allow write: if false; // System only
+    }
+
